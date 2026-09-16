@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cook Compliance · Contractor compliance for the oil patch</title>
+  <meta name="description" content="Compliance sucks. Why are you still trying to do it yourself? ISN, Veriforce, Avetta, safety manuals, OSHA recordkeeping &amp; the rest of it, handled by Cook Compliance, Williston, North Dakota.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cook Compliance · Contractor compliance for the oil patch">
+  <meta property="og:description" content="Compliance sucks. Why are you still trying to do it yourself? ISN, Veriforce, Avetta, safety manuals &amp; the rest of it, handled.">
+  <meta property="og:url" content="https://cookcompliance.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap">
+  <style>
+    :root {
+      --black: #141414;
+      --red: #d41317;
+      --gray-text: #4a4a4a;
+      --gray-muted: #6a6a6a;
+      --gray-band: #f4f4f4;
+      --rule-light: #e6e6e6;
+      --rule-mid: #d6d6d6;
+      --rule-soft: #c9c9c9;
+      --on-dark: #cfcfcf;
+      --gutter: 64px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Archivo, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--black);
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--black); text-decoration: none; }
+    a:hover { color: var(--red); }
+    img { display: block; }
+    .p { display: none; }
+
+    /* Header */
+    .header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 var(--gutter); height: 84px; border-bottom: 1px solid var(--rule-light);
+    }
+    .header .lockup img { height: 34px; width: auto; }
+    .nav { display: flex; align-items: center; gap: 40px; font-size: 15px; font-weight: 500; }
+    .nav .talk { font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 3px; }
+
+    /* Hero */
+    .hero { padding: 120px var(--gutter) 112px; display: flex; flex-direction: column; gap: 40px; }
+    .rule { width: 56px; height: 4px; background: var(--red); }
+    .hero h1 { margin: 0; font-size: 108px; line-height: 0.98; letter-spacing: -0.02em; font-weight: 700; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 64px; align-items: start; margin-top: 8px; }
+    .hero-q { font-size: 32px; line-height: 1.3; font-weight: 400; max-width: 720px; }
+    .hero-side { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; padding-top: 6px; }
+    .hero-cat { font-size: 17px; line-height: 1.55; color: var(--gray-muted); }
+    .button {
+      display: inline-block; background: var(--red); color: #ffffff; font-weight: 700;
+      font-size: 17px; padding: 18px 28px;
+    }
+    .button:hover { color: #ffffff; background: #b80f13; }
+
+    /* Section header (services, about) */
+    .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; }
+    .section-head h2 { margin: 0; font-size: 44px; line-height: 1.08; letter-spacing: -0.02em; font-weight: 700; }
+    .section-head p { margin: 0; font-size: 17px; line-height: 1.55; color: var(--gray-muted); max-width: 460px; }
+
+    /* Services */
+    .services { padding: 96px var(--gutter) 104px; display: flex; flex-direction: column; gap: 48px; border-top: 1px solid var(--rule-light); }
+    .rows { display: flex; flex-direction: column; }
+    .row {
+      display: grid; grid-template-columns: 64px 400px minmax(0, 1fr); gap: 32px;
+      padding: 30px 0; border-top: 1px solid var(--rule-mid);
+    }
+    .row-title { display: contents; }
+    .row:first-child { border-top-color: var(--black); }
+    .row:last-child { border-bottom: 1px solid var(--black); }
+    .num { font-size: 14px; font-weight: 700; color: var(--red); padding-top: 5px; }
+    .row h3 { margin: 0; font-size: 24px; line-height: 1.2; font-weight: 700; }
+    .row p { margin: 0; font-size: 17px; line-height: 1.6; color: var(--gray-text); max-width: 720px; }
+
+    /* Why Cook */
+    .about { background: var(--gray-band); padding: 96px var(--gutter) 104px; display: flex; flex-direction: column; gap: 56px; }
+    .reasons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+    .reason { display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--black); padding-top: 24px; }
+    .reason h3 { margin: 0; font-size: 21px; line-height: 1.25; font-weight: 700; }
+    .reason p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--gray-text); }
+
+    /* Contact */
+    .contact { background: var(--black); padding: 112px var(--gutter); display: flex; flex-direction: column; gap: 32px; align-items: flex-start; }
+    .contact h2 { margin: 0; font-size: 88px; line-height: 1; letter-spacing: -0.02em; font-weight: 700; color: #ffffff; }
+    .contact p { margin: 0; font-size: 18px; line-height: 1.55; color: var(--on-dark); max-width: 560px; }
+    .contact-links { display: flex; align-items: center; gap: 40px; margin-top: 8px; }
+    .phone { font-size: 22px; font-weight: 700; color: #ffffff; }
+    .phone:hover { color: var(--red); }
+
+    /* Footer */
+    .footer { padding: 40px var(--gutter) 44px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-brand { display: flex; flex-direction: column; gap: 12px; }
+    .footer-brand img { height: 28px; width: auto; }
+    .tagline { font-size: 14px; color: var(--gray-muted); font-style: italic; }
+    .copy { font-size: 13px; color: var(--gray-muted); }
+
+    /* Between desktop and phone */
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: clamp(48px, 10vw, 108px); }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-side { padding-top: 0; }
+      .row { grid-template-columns: 64px minmax(0, 1fr); }
+      .row p { grid-column: 2; }
+      .section-head { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .contact h2 { font-size: clamp(44px, 8.5vw, 88px); }
+    }
+
+    /* Phone */
+    @media (max-width: 720px) {
+      :root { --gutter: 20px; }
+      .p { display: inline; }
+      .d { display: none; }
+      .header { height: 64px; }
+      .header .lockup img { height: 24px; }
+      .nav { gap: 0; }
+      .nav .quiet { display: none; }
+      .nav .talk { font-size: 14px; padding-bottom: 2px; }
+
+      .hero { padding: 56px var(--gutter) 64px; gap: 22px; }
+      .rule { width: 40px; height: 3px; }
+      .hero h1 { font-size: 48px; line-height: 1; }
+      .hero-grid { gap: 22px; margin-top: 0; }
+      .hero-q { font-size: 22px; margin-top: 4px; }
+      .hero-side { gap: 22px; }
+      .hero-cat { font-size: 15px; }
+      .button { font-size: 16px; padding: 16px 24px; margin-top: 4px; }
+
+      .section-head h2 { font-size: 32px; }
+      .section-head p { font-size: 15px; }
+
+      .services { padding: 56px var(--gutter) 56px; gap: 28px; }
+      .row { display: flex; flex-direction: column; gap: 8px; padding: 20px 0; }
+      .row-title { display: flex; gap: 14px; align-items: baseline; }
+      .num { font-size: 12px; width: 24px; flex: none; padding-top: 0; }
+      .row h3 { font-size: 19px; }
+      .row p { font-size: 15px; line-height: 1.55; padding-left: 38px; }
+
+      .about { padding: 56px var(--gutter) 64px; gap: 32px; }
+      .reasons { display: flex; flex-direction: column; gap: 0; }
+      .reason { gap: 8px; padding: 22px 0; border-top: 1px solid var(--rule-soft); }
+      .reason:first-child { border-top-color: var(--black); }
+      .reason h3 { font-size: 18px; }
+      .reason p { font-size: 15px; line-height: 1.55; }
+
+      .contact { padding: 64px var(--gutter); gap: 22px; }
+      .contact h2 { font-size: 44px; }
+      .contact p { font-size: 15px; }
+      .contact-links { flex-direction: column; align-items: flex-start; gap: 22px; margin-top: 0; }
+      .contact .button { padding: 16px 22px; margin-top: 0; }
+      .phone { font-size: 20px; }
+
+      .footer { padding: 28px var(--gutter) 36px; flex-direction: column; align-items: flex-start; gap: 14px; }
+      .footer-brand { gap: 10px; }
+      .footer-brand img { height: 24px; }
+      .tagline { font-size: 13px; }
+      .copy { font-size: 12px; line-height: 1.5; }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <header class="header">
+    <a href="#top" class="lockup"><img src="cook-compliance-lockup.svg" alt="Cook Compliance"></a>
+    <nav class="nav">
+      <a href="#services" class="quiet">Services</a>
+      <a href="#about" class="quiet">Why Cook?</a>
+      <a href="#contact" class="talk">Talk to us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="rule"></div>
+    <h1>Compliance sucks.</h1>
+    <div class="hero-grid">
+      <div class="hero-q">Why are you still trying to do it yourself?</div>
+      <div class="hero-side">
+        <div class="hero-cat">Contractor compliance for the oil patch: ISN, Veriforce, Avetta, safety manuals &amp; the rest of it.</div>
+        <a href="#contact" class="button">Hand it over</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="section-head">
+      <h2>What we take off your plate.</h2>
+      <p>For contractors &amp; operators in oil &amp; gas, construction &amp; transportation, across the U.S.</p>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-title"><div class="num">01</div><h3><span class="d">ISN, Veriforce &amp; Avetta, handled</span><span class="p">ISN, Veriforce &amp; Avetta</span></h3></div>
+        <p>We run the day-to-day of the platforms: questionnaires kept current, documents uploaded before anything expires, grade changes caught &amp; fixed. The emails &amp; calls stop landing on you.</p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">02</div><h3><span class="d">A monthly report on where you stand</span><span class="p">The monthly report</span></h3></div>
+        <p><span class="d">Your scorecard on each platform we manage, what's due, what we're already handling &amp; the dates that matter. One email a month.</span><span class="p">Your scorecard, what's due, what we're already handling &amp; the dates that matter. One email a month.</span></p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">03</div><h3>Safety manuals that don't suck</h3></div>
+        <p><span class="d">Custom written programs readable enough that you might actually read them. They pass muster with the platforms and say the standard in plain English.</span><span class="p">Custom written programs in plain English that pass muster with the platforms.</span></p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">04</div><h3>Operator prequalification</h3></div>
+        <p><span class="d">Operator information requests answered &amp; argued for you: safety questionnaires, pre-quals &amp; TRIR variance requests when your numbers need context.</span><span class="p">Safety questionnaires, pre-quals &amp; TRIR variance requests, answered &amp; argued for you.</span></p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">05</div><h3>OSHA recordkeeping, done</h3></div>
+        <p><span class="d">Hours tracked, logs kept, the electronic submission filed on time: the part of OSHA nobody remembers until it's due.</span><span class="p">Hours tracked, logs kept, the electronic submission filed on time.</span></p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">06</div><h3><span class="d">Insurance certificates that stay current</span><span class="p">Insurance certificates</span></h3></div>
+        <p>COIs where your operators want them, renewals chased before anything lapses &amp; your EMR letter wherever it needs to be.</p>
+      </div>
+      <div class="row">
+        <div class="row-title"><div class="num">07</div><h3><span class="d">Long-term compliance planning</span><span class="p">Long-term planning</span></h3></div>
+        <p><span class="d">Which operators do you want to work for next year? In five? We keep an index of every operator in the patch, so we know what's coming and can walk you through it.</span><span class="p">We keep an index of every operator in the patch, so we know what's coming and can walk you through it.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-head">
+      <h2>So why Cook?</h2>
+      <p>A boutique compliance firm based in Williston, North Dakota, that does more than just check the right boxes.</p>
+    </div>
+    <div class="reasons">
+      <div class="reason">
+        <h3>We get it: compliance sucks.</h3>
+        <p>You didn't start your company daydreaming about OSHA, ISN, or the paperwork. We won't sugarcoat it.</p>
+      </div>
+      <div class="reason">
+        <h3>We actually respond when you call.</h3>
+        <p>Contractors leave compliance managers who don't call back. Big question or small, we answer.</p>
+      </div>
+      <div class="reason">
+        <h3>We educate &amp; equip.</h3>
+        <p><span class="d">You get the why of compliance, not just the what, along with the tools to keep your crew safe.</span><span class="p">The why of compliance, not just the what, along with the tools to keep your crew safe.</span></p>
+      </div>
+    </div>
+    <!-- Client quotes: off until current clients supply them. Restore this block, fill the three slots, and add the styles from the artboard (Branding/source/website/Main.dc.html, #clients).
+    <div id="clients" class="clients">
+      <div class="section-head"><h2>Don't take our word for it.</h2><p>From the contractors who handed it over.</p></div>
+      <div class="quotes">
+        <blockquote><p>“[A sentence or two from a current client, in their own words.]”</p><cite>[Name], [Company] · [Town], ND</cite></blockquote>
+        <blockquote><p>“[A sentence or two from a current client, in their own words.]”</p><cite>[Name], [Company] · [Town], ND</cite></blockquote>
+        <blockquote><p>“[A sentence or two from a current client, in their own words.]”</p><cite>[Name], [Company] · [Town], ND</cite></blockquote>
+      </div>
+    </div>
+    -->
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="rule"></div>
+    <h2>Hand it over.</h2>
+    <p>Reach out for help with ISN, Veriforce, Avetta, safety manuals &amp; more.</p>
+    <div class="contact-links">
+      <a href="mailto:hello@cookcompliance.co" class="button">hello@cookcompliance.co</a>
+      <a href="tel:+16083204345" class="phone">(608) 320-4345</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="cook-compliance-lockup.svg" alt="Cook Compliance">
+      <div class="tagline">Making compliance not suck.</div>
+    </div>
+    <div class="copy">© 2026 Cook Compliance Solutions LLC · Williston, ND</div>
+  </footer>
+
+</body>
+</html>
