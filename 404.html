@@ -18,7 +18,7 @@
     img { display: block; }
     .header { display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter); height: 84px; border-bottom: 1px solid var(--rule-light); }
     .header img { height: 34px; width: auto; }
-    .talk { font-size: 15px; font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 3px; }
+    .talk { font-size: 15px; font-weight: 500; }
     main { flex: 1; padding: 120px var(--gutter) 112px; display: flex; flex-direction: column; gap: 32px; align-items: flex-start; }
     .rule { width: 56px; height: 4px; background: var(--red); }
     h1 { margin: 0; font-size: 72px; line-height: 1; letter-spacing: -0.02em; font-family: Avenir, 'Avenir Next', 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
@@ -29,7 +29,7 @@
     .footer img { height: 28px; width: auto; }
     @media (max-width: 720px) {
       :root { --gutter: 20px; }
-      .header { height: 64px; } .header img { height: 24px; } .talk { font-size: 14px; padding-bottom: 2px; }
+      .header { height: 64px; } .header img { height: 24px; } .talk { font-size: 14px; }
       main { padding: 56px var(--gutter) 64px; gap: 22px; }
       .rule { width: 40px; height: 3px; }
       h1 { font-size: 44px; } p { font-size: 17px; }
@@ -42,7 +42,7 @@
 <body>
   <header class="header">
     <a href="/"><img src="/cook-compliance-lockup.svg" alt="Cook Compliance"></a>
-    <a href="/#contact" class="talk">Talk to us</a>
+    <a href="/#contact" class="talk">Contact</a>
   </header>
   <main>
     <div class="rule"></div>
