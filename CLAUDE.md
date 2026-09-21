@@ -23,6 +23,6 @@ GitHub Pages from `main`, repo `davidavalerio/cookcompliance.com`. `/deploy` shi
 
 ## Domain
 
-Registered at GoDaddy in Alma's name; David manages the DNS there (GoDaddy's web UI, no API access). Records that make the site work: four A records on `@` (GitHub Pages' `185.199.108.153` through `185.199.111.153`) and `www` as a CNAME to `davidavalerio.github.io`, so `www.cookcompliance.com` redirects to the apex. Email stays on cookcompliance.co (Wix DNS) until the mail move; the .com's MX and TXT records are GoDaddy defaults and are left alone.
+Registered at GoDaddy in Alma's name; David manages the DNS there (GoDaddy's web UI, no API access). Records that make the site work: four A records on `@` (GitHub Pages' `185.199.108.153` through `185.199.111.153`) and `www` as a CNAME to `davidavalerio.github.io`, so `www.cookcompliance.com` redirects to the apex. The mailbox stays on cookcompliance.co (Wix DNS) until the mail move; `hello@cookcompliance.com` forwards to it through GoDaddy, so the .com's MX and TXT records are GoDaddy's and are left alone — changing them breaks the forward.
 
-Contact details on the page: `hello@cookcompliance.co` and `(713) 478-9395` — David's number, since he handles sales end to end (Alma's (608) line stays in her email signature, not on the site). When the mail moves to the .com, the email address on the page changes here.
+Contact details on the page: `hello@cookcompliance.com` (the forward) and `(713) 478-9395` — David's number, since he handles sales end to end (Alma's (608) line stays in her email signature, not on the site).
