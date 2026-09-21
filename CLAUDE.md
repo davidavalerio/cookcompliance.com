@@ -4,7 +4,7 @@ The Cook Compliance Solutions website: a one-page static site in the refined bra
 
 ## Stack
 
-Static HTML with inline CSS, no JavaScript, no build step. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Light for text, 500 nav, 700 buttons) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout: the desktop artboard above 1024px, a stacked middle layout to 720px, the phone artboard below. Where the phone artboard says a service row shorter, the page carries both texts and shows one per width (`.d` desktop, `.p` phone) — the two never differ in substance.
+Static HTML with inline CSS, no JavaScript, no build step. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Light for text, 500 nav, 700 buttons) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout: the desktop artboard above 1024px, a stacked middle layout to 720px, the phone artboard below. Two sections open to the full screen: the hero fills the first screen under the header and the black sign-off band fills a screen of its own, content centered (`100svh`, with the paddings as the floor so a short window never clips); services and Why Cook keep their natural height. The header's three links — Services, Why Cook?, Contact — are identical: one weight, no underline, red on hover only (Contact is the only one on phones and on the 404 page). Where the phone artboard says a service row shorter, the page carries both texts and shows one per width (`.d` desktop, `.p` phone) — the two never differ in substance.
 
 ## Files
 
@@ -25,4 +25,4 @@ GitHub Pages from `main`, repo `davidavalerio/cookcompliance.com`. `/deploy` shi
 
 Registered at GoDaddy in Alma's name; David manages the DNS there (GoDaddy's web UI, no API access). Records that make the site work: four A records on `@` (GitHub Pages' `185.199.108.153` through `185.199.111.153`) and `www` as a CNAME to `davidavalerio.github.io`, so `www.cookcompliance.com` redirects to the apex. Email stays on cookcompliance.co (Wix DNS) until the mail move; the .com's MX and TXT records are GoDaddy defaults and are left alone.
 
-Contact details on the page: `hello@cookcompliance.co` and `(608) 320-4345`. When the mail moves to the .com, the email address on the page changes here.
+Contact details on the page: `hello@cookcompliance.co` and `(713) 478-9395` — David's number, since he handles sales end to end (Alma's (608) line stays in her email signature, not on the site). When the mail moves to the .com, the email address on the page changes here.
