@@ -277,5 +277,19 @@
     <div class="copy">© 2026 Cook Compliance Solutions LLC · Williston, ND</div>
   </footer>
 
+  <script>
+    // Header and button links scroll to their section without putting #section in the address.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#"]');
+      var t = a && document.getElementById(a.getAttribute('href').slice(1));
+      if (!t) return;
+      e.preventDefault();
+      t.scrollIntoView();
+    });
+    // Arriving on a #section link lands there, then the address goes back to plain.
+    window.addEventListener('load', function () {
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    });
+  </script>
 </body>
 </html>
