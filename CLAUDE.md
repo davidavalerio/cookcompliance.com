@@ -4,7 +4,7 @@ The Cook Compliance Solutions website: a one-page static site in the refined bra
 
 ## Stack
 
-Static HTML with inline CSS, no JavaScript, no build step. Archivo 400/500/700 from Google Fonts. One responsive layout: the desktop artboard above 1024px, a stacked middle layout to 720px, the phone artboard below. Where the phone artboard says a service row shorter, the page carries both texts and shows one per width (`.d` desktop, `.p` phone) — the two never differ in substance.
+Static HTML with inline CSS, no JavaScript, no build step. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Light for text, 500 nav, 700 buttons) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout: the desktop artboard above 1024px, a stacked middle layout to 720px, the phone artboard below. Where the phone artboard says a service row shorter, the page carries both texts and shows one per width (`.d` desktop, `.p` phone) — the two never differ in substance.
 
 ## Files
 
