@@ -10,7 +10,7 @@ Static HTML with inline CSS and no build step. The one script, at the foot of `i
 
 - `index.html` — the whole site. Sections: header, hero, `#services` (seven rows), `#about` (Why Cook?), `#contact` (black band), footer.
 - `404.html` — branded not-found page.
-- `cook-compliance-lockup.svg`, `favicon.ico`, `favicon.svg` — copies from `Branding/`; regenerate there, then copy.
+- `logo-horizontal.png` (header), `logo.png` (footer, the full stacked logo), `favicon.ico`, `favicon.png`, `apple-touch-icon.png` — copies of Alma's logo files in `Branding/logo/`; replace them there, then copy.
 - `CNAME` — `cookcompliance.com`.
 
 ## Switched off
