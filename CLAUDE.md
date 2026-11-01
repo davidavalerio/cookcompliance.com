@@ -1,6 +1,6 @@
 # cookcompliance.com
 
-The Cook Compliance Solutions website: a one-page static site in the refined brand (white ground, black type, red as accent only). Alma's company; David runs the site. The design record is the Claude Design canvas whose artboards live in the Drive at `0-Cook Compliance/Branding/source/website/` (`Main.dc.html` desktop, `Phone.dc.html` phone); the brand rules and voice are in `Branding/README.md` there. Change the live site here, in the repo. The artboards stay as the record of what Alma approved; a redesign starts there, a copy or layout fix starts here.
+The Cook Compliance Solutions website: a one-page static site in the refined brand (white ground, black type, red as accent only). Alma's company; David runs the site. The design record is the Claude Design canvas whose artboards live in the Drive at `Administrative/David/Branding/source/website/` (`Main.dc.html` desktop, `Phone.dc.html` phone); the brand rules and voice are in `Branding/README.md` there. Change the live site here, in the repo. The artboards stay as the record of what Alma approved; a redesign starts there, a copy or layout fix starts here.
 
 ## Stack
 
