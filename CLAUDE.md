@@ -15,7 +15,7 @@ Static HTML with inline CSS and no build step. The one script, at the foot of `i
 
 ## Switched off
 
-The "Don't take our word for it" client-quote block sits in `index.html` as an HTML comment inside `#about`, waiting for quotes from current clients. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md` if Alma wants it used.
+The "Don't take our word for it" client-quote block sits in `index.html` as an HTML comment inside `#about`. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
 
 ## Deployment
 
@@ -23,6 +23,6 @@ GitHub Pages from `main`, repo `davidavalerio/cookcompliance.com`. `/deploy` shi
 
 ## Domain
 
-Registered at GoDaddy in Alma's name; David manages the DNS there (GoDaddy's web UI, no API access). Records that make the site work: four A records on `@` (GitHub Pages' `185.199.108.153` through `185.199.111.153`) and `www` as a CNAME to `davidavalerio.github.io`, so `www.cookcompliance.com` redirects to the apex. The mailbox stays on cookcompliance.co (Google Workspace mail, DNS at GoDaddy) until the mail move; `hello@cookcompliance.com` forwards to it through GoDaddy, so the .com's MX and TXT records are GoDaddy's and are left alone — changing them breaks the forward.
+Registered at GoDaddy in Alma's name; David manages the DNS there (GoDaddy's web UI, no API access). Records that make the site work: four A records on `@` (GitHub Pages' `185.199.108.153` through `185.199.111.153`) and `www` as a CNAME to `davidavalerio.github.io`, so `www.cookcompliance.com` redirects to the apex. The mailbox is on cookcompliance.co (Google Workspace mail, DNS at GoDaddy); `hello@cookcompliance.com` forwards to it through GoDaddy, so the .com's MX and TXT records are GoDaddy's and are left alone — changing them breaks the forward.
 
 Contact details on the page: `hello@cookcompliance.com` (the forward) and `(713) 478-9395` — David's number, since he handles sales end to end (Alma's (608) line stays in her email signature, not on the site).
