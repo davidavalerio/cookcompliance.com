@@ -4,18 +4,18 @@ The Cook Compliance Solutions website: one screen in the refined brand (white gr
 
 ## Stack
 
-Static HTML with inline CSS, no build step and no script. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Regular for text, Light only on the large hero question, 700 for the button and phone number) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout. Above 1024px the page is one screen with no scrolling on a laptop: the header (logo alone), then the hook, its question, the email button and the phone number on the left, the six services on the right, and the copyright line at the foot; the body fills the window (`100svh`) and grows when the content needs more. To 720px the two halves stack, and below that is the phone layout. There are no in-page links and no navigation: the email button and the phone number are the only ways out.
+Static HTML with inline CSS, no build step and no script. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Regular for text, Light only on the large hero question, 700 for the button and phone number) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout. Above 1024px the page is one screen with no scrolling on a laptop: the header (logo alone), then the hook, its question, the email button and the phone number on the left, the seven services on the right, and the copyright line at the foot; the body fills the window (`100svh`) and grows when the content needs more. To 720px the two halves stack, and below that is the phone layout. There are no in-page links and no navigation: the email button and the phone number are the only ways out.
 
 ## Files
 
-- `index.html` — the whole site: header, `.hero`, `.services` (six rows), footer.
+- `index.html` — the whole site: header, `.hero`, `.services` (seven rows), footer.
 - `404.html` — branded not-found page; its Contact link opens an email to hello@cookcompliance.com.
 - `logo-horizontal.png` (header), `logo.png` (the full stacked logo, used on the 404 page), `favicon.ico`, `favicon.png`, `apple-touch-icon.png` — copies of Alma's logo files in `Branding/logo/`; replace them there, then copy.
 - `CNAME` — `cookcompliance.com`.
 
 ## Left off the page
 
-David's cuts from the earlier design: the monthly report as a service (it feeds the others and is not itself something taken off the client's plate), Why Cook?, the black sign-off band, the audience line under the services heading, the header links, the footer logo and the promise under it. The earlier page, with all of them and the switched-off client-quote block, is in the git history before the one-screen rebuild. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
+David's cuts from the earlier design: Why Cook?, the black sign-off band, the audience line under the services heading, the header links, the footer logo and the promise under it. The earlier page, with all of them, the longer wording of each service and the switched-off client-quote block, is in the git history before the one-screen rebuild. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
 
 ## Deployment
 

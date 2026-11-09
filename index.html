@@ -68,6 +68,13 @@
     /* Footer */
     .footer { flex: none; padding: 20px var(--gutter) 28px; font-size: 13px; color: var(--gray-muted); }
 
+    /* Desktop: seven rows held to one laptop screen */
+    @media (min-width: 1025px) {
+      .main { padding: 32px var(--gutter); }
+      .row { padding: 8px 0; }
+      .footer { padding: 16px var(--gutter) 22px; }
+    }
+
     /* Between desktop and phone: the two halves stack */
     @media (max-width: 1024px) {
       .main { flex-direction: column; align-items: stretch; gap: 64px; padding: 72px var(--gutter) 64px; }
@@ -121,33 +128,40 @@
         <div class="row">
           <div class="num">02</div>
           <div class="row-text">
+            <h3>The monthly report</h3>
+            <p>Your scorecard, what's due, what we're already handling &amp; the dates that matter. One email a month.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="num">03</div>
+          <div class="row-text">
             <h3>Safety manuals that don't suck</h3>
             <p>Custom written programs in plain English that pass muster with the platforms.</p>
           </div>
         </div>
         <div class="row">
-          <div class="num">03</div>
+          <div class="num">04</div>
           <div class="row-text">
             <h3>Operator prequalification</h3>
             <p>Safety questionnaires, pre-quals &amp; TRIR variance requests, answered &amp; argued for you.</p>
           </div>
         </div>
         <div class="row">
-          <div class="num">04</div>
+          <div class="num">05</div>
           <div class="row-text">
             <h3>OSHA recordkeeping, done</h3>
             <p>Hours tracked, logs kept, the electronic submission filed on time.</p>
           </div>
         </div>
         <div class="row">
-          <div class="num">05</div>
+          <div class="num">06</div>
           <div class="row-text">
             <h3>Insurance certificates</h3>
             <p>COIs where your operators want them, renewals chased before anything lapses &amp; your EMR letter wherever it needs to be.</p>
           </div>
         </div>
         <div class="row">
-          <div class="num">06</div>
+          <div class="num">07</div>
           <div class="row-text">
             <h3>Long-term planning</h3>
             <p>We keep an index of every operator in the patch, so we know what's coming and can walk you through it.</p>
