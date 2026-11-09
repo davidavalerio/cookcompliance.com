@@ -1,21 +1,21 @@
 # cookcompliance.com
 
-The Cook Compliance Solutions website: a one-page static site in the refined brand (white ground, black type, red as accent only). David and Alma's business; David runs the site. The design record is the Claude Design canvas whose artboards live in the Drive at `Administrative/David/Branding/source/website/` (`Main.dc.html` desktop, `Phone.dc.html` phone); the brand rules and voice are in `Branding/README.md` there. Change the live site here, in the repo. The artboards stay as the record of what Alma approved; a redesign starts there, a copy or layout fix starts here.
+The Cook Compliance Solutions website: one screen in the refined brand (white ground, black type, red as accent only). David and Alma's business; David runs the site. The design record is the Claude Design canvas "Cook Website Options" (https://claude.ai/artifact/HYufQeJNFpSjM2u7sNBk9Q), whose Option A is the live page; the earlier multi-section design is the artboards in the Drive at `Administrative/David/Branding/source/website/` (`Main.dc.html` desktop, `Phone.dc.html` phone). The brand rules and voice are in the Cook Design System and `Branding/README.md`. Change the live site here, in the repo; a redesign starts on the canvas, a copy or layout fix starts here.
 
 ## Stack
 
-Static HTML with inline CSS and no build step. The one script, at the foot of `index.html`, keeps the address plain: the in-page links (header, lockup, hero button) scroll to their section without adding `#section`, and a visitor arriving on a `#section` link (the 404 page's Contact, or one sent by hand) lands there and the address is then cleared; without the script the links work as ordinary `#` links. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Regular for text — Light only on the large hero question, since Light in gray at small sizes reads too faint on screens — 500 nav, 700 buttons) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout: the desktop artboard above 1024px, a stacked middle layout to 720px, the phone artboard below. Three sections open to the full screen: the hero fills the first screen under the header, and Why Cook and the black sign-off band each fill a screen of their own, content centered (`100svh`, with the paddings as the floor so a short window never clips); services keeps its natural height. Why Cook's three headings are sized to the window so each holds one line on desktop. The header's three links — Services, Why Cook?, Contact — are identical: one weight, no underline, red on hover only (Contact is the only one on phones and on the 404 page). Where the phone artboard says a service row shorter, the page carries both texts and shows one per width (`.d` desktop, `.p` phone) — the two never differ in substance.
+Static HTML with inline CSS, no build step and no script. Type is Alma's own two faces, supplied by the visitor's device: Avenir Heavy for headlines and numerals, Helvetica Neue (Regular for text, Light only on the large hero question, 700 for the button and phone number) for the rest. Where Avenir is missing (Windows, Android) the page fetches Nunito Sans Bold from Google Fonts as its stand-in and text falls to Arial; Apple devices download no font. One responsive layout. Above 1024px the page is one screen with no scrolling on a laptop: the header (logo alone), then the hook, its question, the email button and the phone number on the left, the six services on the right, and the copyright line at the foot; the body fills the window (`100svh`) and grows when the content needs more. To 720px the two halves stack, and below that is the phone layout. There are no in-page links and no navigation: the email button and the phone number are the only ways out.
 
 ## Files
 
-- `index.html` — the whole site. Sections: header, hero, `#services` (seven rows), `#about` (Why Cook?), `#contact` (black band), footer.
-- `404.html` — branded not-found page.
-- `logo-horizontal.png` (header), `logo.png` (footer, the full stacked logo), `favicon.ico`, `favicon.png`, `apple-touch-icon.png` — copies of Alma's logo files in `Branding/logo/`; replace them there, then copy.
+- `index.html` — the whole site: header, `.hero`, `.services` (six rows), footer.
+- `404.html` — branded not-found page; its Contact link opens an email to hello@cookcompliance.com.
+- `logo-horizontal.png` (header), `logo.png` (the full stacked logo, used on the 404 page), `favicon.ico`, `favicon.png`, `apple-touch-icon.png` — copies of Alma's logo files in `Branding/logo/`; replace them there, then copy.
 - `CNAME` — `cookcompliance.com`.
 
-## Switched off
+## Left off the page
 
-The "Don't take our word for it" client-quote block sits in `index.html` as an HTML comment inside `#about`. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
+David's cuts from the earlier design: the monthly report as a service (it feeds the others and is not itself something taken off the client's plate), Why Cook?, the black sign-off band, the audience line under the services heading, the header links, the footer logo and the promise under it. The earlier page, with all of them and the switched-off client-quote block, is in the git history before the one-screen rebuild. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
 
 ## Deployment
 
