@@ -15,7 +15,7 @@ Static HTML with inline CSS, no build step and no script. Type is Alma's own two
 
 ## Left off the page
 
-David's cuts from the earlier design: Why Cook?, the black sign-off band, the audience line under the services heading, the header links, the footer logo and the promise under it. The earlier page, with all of them, the longer wording of each service and the switched-off client-quote block, is in the git history before the one-screen rebuild. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
+David's cuts from the earlier design: Why Cook?, the black sign-off band, the audience line under the services heading, the header links, the gray rule under the header (here and on the not-found page), the footer logo and the promise under it. The earlier page, with all of them, the longer wording of each service and the switched-off client-quote block, is in the git history before the one-screen rebuild. The old Wix site's one testimonial (Andy Wagoner, Wagoner Enterprises, a former client) is in the Drive at `Reference/Website Archive/text/home.md`.
 
 ## Deployment
 
