@@ -40,8 +40,9 @@
     h1, h2, h3, .num { font-family: Avenir, 'Avenir Next', 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
 
     /* Header */
-    .header { flex: none; display: flex; align-items: center; padding: 0 var(--gutter); height: 76px; border-bottom: 1px solid var(--rule-light); }
+    .header { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 var(--gutter); height: 76px; border-bottom: 1px solid var(--rule-light); }
     .header img { height: 40px; width: auto; }
+    .company { font-size: 13px; line-height: 1.4; color: var(--gray-muted); text-align: right; }
 
     /* The one screen: hook on the left, services on the right */
     .main { flex: 1 1 auto; display: flex; align-items: center; gap: 72px; padding: 40px var(--gutter); }
@@ -65,9 +66,6 @@
     .row h3 { margin: 0; font-size: 20px; line-height: 1.25; }
     .row p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--gray-text); text-wrap: pretty; }
 
-    /* Footer */
-    .footer { flex: none; padding: 20px var(--gutter) 28px; font-size: 13px; color: var(--gray-muted); }
-
     /* Desktop: the rows open up with the height of the window */
     @media (min-width: 1025px) {
       .main { padding: clamp(24px, 4svh, 48px) var(--gutter); }
@@ -85,6 +83,9 @@
       :root { --gutter: 20px; }
       .header { height: 64px; }
       .header img { height: 30px; }
+      .company { font-size: 12px; }
+      .company span { display: block; }
+      .company .sep { display: none; }
       .main { gap: 88px; padding: 56px var(--gutter) 56px; }
       .hero { gap: 22px; }
       .rule { width: 40px; height: 3px; }
@@ -94,7 +95,6 @@
       .services h2 { font-size: 24px; }
       .row { gap: 14px; padding: 20px 0; }
       .row h3 { font-size: 19px; }
-      .footer { padding: 20px var(--gutter) 28px; font-size: 12px; line-height: 1.5; }
     }
   </style>
 </head>
@@ -102,6 +102,7 @@
 
   <header class="header">
     <a href="/"><img src="logo-horizontal.png" alt="Cook Compliance"></a>
+    <div class="company"><span>Cook Compliance Solutions LLC</span><span class="sep"> · </span><span>Williston, ND</span></div>
   </header>
 
   <main class="main">
@@ -163,8 +164,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">© 2026 Cook Compliance Solutions LLC · Williston, ND</footer>
 
 </body>
 </html>
